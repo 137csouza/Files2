@@ -1,0 +1,52 @@
+meta {
+  name: /v2/Models/Validate/Raw/VAN
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{appreciatorUrl}}/v2/Models/Validate/Raw/VAN
+  body: json
+  auth: apikey
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}
+
+body:json {
+  {
+    "SummaryModel": "enim sunt ipsum",
+    "SummaryType": "nisi enim pariatur",
+    "SummaryUnderlying": "ven",
+    "CalculatedVariablesSpot": -60369420.18465759,
+    "DetailsCallPut": "ut laborum sint Duis ea",
+    "DetailsEuroAmen": "sunt enim est",
+    "DetailsNowStrike": -83900692.1629585,
+    "DetailsExpiration": "1951-10-27T18:02:49.188Z",
+    "IdentifierListedUnderlying": "Ut adipisicing elit",
+    "DetailsDividendProtected": true,
+    "AttributesCurrencySpot": "ut",
+    "AttributesCalendarSpot": "nostrud pariatur proident",
+    "SpotMultiplier": 33358677.940095663,
+    "BorrowCalendar": "sit pariatur commodo",
+    "InterestCalendar": "reprehenderit commodo velit veniam",
+    "VolatilityCalendar": "in",
+    "VolatilityShock": -51254977.63273987,
+    "VolBump": 37058241.42790112,
+    "CalculatedVariablesBorrow": 53162958.67283377,
+    "CalculatedVariablesInterest": 96272131.66248757,
+    "CalculatedVariablesDividend": -82482531.93387716,
+    "CalculatedVariablesVolatility": 27657294.830944985,
+    "DetailsBase": 7964216,
+    "FinalCalculatedDataPriceBump": 12071197.38489215,
+    "DetailsIssueDate": "2011-06-15T11:56:50.139Z"
+  }
+}

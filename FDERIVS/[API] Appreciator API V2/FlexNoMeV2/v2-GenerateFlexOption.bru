@@ -1,0 +1,26 @@
+meta {
+  name: /v2/GenerateFlexOption
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{appreciatorUrl}}/v2/GenerateFlexOption
+  body: json
+  auth: apikey
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}
+
+body:json {
+  {}
+}

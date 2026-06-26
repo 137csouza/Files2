@@ -1,0 +1,21 @@
+meta {
+  name: /Models/Supported
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{appreciatorUrl}}/Models/Supported
+  body: none
+  auth: apikey
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}

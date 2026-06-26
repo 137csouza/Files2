@@ -1,0 +1,29 @@
+meta {
+  name: /Models/:instrumentModel
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{appreciatorUrl}}/Models/:instrumentModel?refDate=2010-06-29T16:08:21.063Z
+  body: none
+  auth: apikey
+}
+
+params:query {
+  refDate: 2010-06-29T16:08:21.063Z
+}
+
+params:path {
+  instrumentModel: proident velit en
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}

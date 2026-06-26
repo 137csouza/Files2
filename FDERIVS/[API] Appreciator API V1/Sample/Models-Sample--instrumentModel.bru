@@ -1,0 +1,25 @@
+meta {
+  name: /Models/Sample/:instrumentModel
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{appreciatorUrl}}/Models/Sample/:instrumentModel
+  body: none
+  auth: apikey
+}
+
+params:path {
+  instrumentModel: proident velit en
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}

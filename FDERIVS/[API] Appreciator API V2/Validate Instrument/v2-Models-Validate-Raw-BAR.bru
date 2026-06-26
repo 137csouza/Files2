@@ -1,0 +1,50 @@
+meta {
+  name: /v2/Models/Validate/Raw/BAR
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{appreciatorUrl}}/v2/Models/Validate/Raw/BAR
+  body: json
+  auth: apikey
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}
+
+body:json {
+  {
+    "SummaryModel": "culpa minim",
+    "SummaryType": "Ut non",
+    "SummaryUnderlying": "ea",
+    "DetailsDividendProtected": false,
+    "AttributesCurrencySpot": "ut Ut",
+    "AttributesCalendarSpot": "tempor enim aliqua ad elit",
+    "CalculatedVariablesSpot": 30878121.194369793,
+    "SpotMultiplier": 38891051.428228915,
+    "BorrowCalendar": "minim in ex fugiat",
+    "InterestCalendar": "ad incididunt sed",
+    "VolatilityCalendar": "sit aliquip esse dolore",
+    "VolatilityShock": 37299658.85753921,
+    "VolBump": 95221810.93880785,
+    "DetailsCallPut": "ea velit anim mollit",
+    "DetailsBase": -6412869,
+    "DetailsNowStrike": 17594242.433151305,
+    "DetailsBarrierNowStrike": 65869021.47424501,
+    "DetailsBarrierRebate": -5604882.724228993,
+    "BarrierShiftPoints": -85434013.4479929,
+    "DetailsIssueDate": "2018-05-06T04:16:01.127Z",
+    "DetailsExpiration": "1979-12-04T19:15:06.413Z",
+    "TriggeredBarrier": false,
+    "VolReference": "nulla"
+  }
+}

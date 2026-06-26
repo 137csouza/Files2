@@ -1,0 +1,29 @@
+meta {
+  name: /Models
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{appreciatorUrl}}/Models?refDate=2010-06-29T16:08:21.063Z
+  body: none
+  auth: apikey
+}
+
+params:query {
+  refDate: 2010-06-29T16:08:21.063Z
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}
+
+vars:pre-request {
+  appreciatorUrl: http://localhost:51857/
+}

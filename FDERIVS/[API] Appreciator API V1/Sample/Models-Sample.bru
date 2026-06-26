@@ -1,0 +1,21 @@
+meta {
+  name: /Models/Sample
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{appreciatorUrl}}/Models/Sample
+  body: none
+  auth: apikey
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}

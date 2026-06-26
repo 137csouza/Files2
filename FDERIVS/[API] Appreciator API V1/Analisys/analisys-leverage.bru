@@ -1,0 +1,33 @@
+meta {
+  name: /analisys/leverage
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{appreciatorUrl}}/analisys/leverage?request.assetIds=veniam&request.assetIds=sit dolor eu esse sint&request.referenceDate=2010-06-29T16:08:21.063Z&request.interestCalendar=proident velit en&request.interestCurveGroup=-94047168&request.borrowCalendar=proident velit en&request.borrowCurveGroup=-94047168&request.volatilityCalendar=proident velit en&request.volatilityCurveGroup=-94047168
+  body: none
+  auth: apikey
+}
+
+params:query {
+  request.assetIds: veniam
+  request.assetIds: sit dolor eu esse sint
+  request.referenceDate: 2010-06-29T16:08:21.063Z
+  request.interestCalendar: proident velit en
+  request.interestCurveGroup: -94047168
+  request.borrowCalendar: proident velit en
+  request.borrowCurveGroup: -94047168
+  request.volatilityCalendar: proident velit en
+  request.volatilityCurveGroup: -94047168
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}

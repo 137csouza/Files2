@@ -1,0 +1,38 @@
+meta {
+  name: /analisys/regression
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{appreciatorUrl}}/analisys/regression?body.instrument.summaryUnderlying=proident velit en&body.instrument.attributesCurrencySpot=proident velit en&body.instrument.attributesCalendarSpot=proident velit en&body.instrument.interestCalendar=proident velit en&body.instrument.borrowCalendar=proident velit en&body.instrument.volatilityCalendar=proident velit en&body.instrument.detailsEuroAmen=proident velit en&body.instrument.detailsCallPut=proident velit en&body.referenceDate=2010-06-29T16:08:21.063Z&body.referenceDateRegression=-94047168&body.calculateVariablesBusinessDaysExpirations=21669150&body.calculateVariablesBusinessDaysExpirations=70917234&body.spotToStrikePricePercents=15867512.749669597&body.spotToStrikePricePercents=46757736.444561034
+  body: none
+  auth: apikey
+}
+
+params:query {
+  body.instrument.summaryUnderlying: proident velit en
+  body.instrument.attributesCurrencySpot: proident velit en
+  body.instrument.attributesCalendarSpot: proident velit en
+  body.instrument.interestCalendar: proident velit en
+  body.instrument.borrowCalendar: proident velit en
+  body.instrument.volatilityCalendar: proident velit en
+  body.instrument.detailsEuroAmen: proident velit en
+  body.instrument.detailsCallPut: proident velit en
+  body.referenceDate: 2010-06-29T16:08:21.063Z
+  body.referenceDateRegression: -94047168
+  body.calculateVariablesBusinessDaysExpirations: 21669150
+  body.calculateVariablesBusinessDaysExpirations: 70917234
+  body.spotToStrikePricePercents: 15867512.749669597
+  body.spotToStrikePricePercents: 46757736.444561034
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{apiKey}}
+  placement: header
+}
